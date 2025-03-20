@@ -1,0 +1,33 @@
+Promtail
+
+    Purpose: Fetches logs from containers, servers, or applications and forwards them to Loki.
+
+    Functionality: Reads log files, applies labels, and sends logs to Loki.
+
+    Works with: Loki for centralized log storage.
+
+Loki
+
+    Purpose: Horizontally scalable, highly available log aggregation system.
+
+    Functionality: Stores logs efficiently without full indexing.
+
+    Works with: Promtail (log shipping) and Grafana (log visualization).
+
+    Acts as a central storage system for logs.
+
+Grafana
+
+    Purpose: Visualizes logs, metrics, and traces using data from Loki.
+
+    Functionality: Provides customizable dashboards, filtering, searching, and alerting.
+
+    Works with: Loki for logs, Prometheus for metrics, and other data sources.
+
+Workflow:
+
+    Promtail collects logs from containers and sends them to Loki.
+
+    Loki stores and organizes the logs efficiently.
+
+    Grafana pulls data from Loki and provides visual insights.
