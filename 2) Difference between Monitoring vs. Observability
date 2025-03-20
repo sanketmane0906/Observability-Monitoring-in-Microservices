@@ -1,0 +1,23 @@
+Monitoring vs. Observability in Microservices
+
+
+Feature	               Monitoring 🛠️	                                                         Observability 🔍
+__________________________________________________________________________________________________________________________________________________________________
+1) Definition        	Predefined collection of metrics to track system health.	           Ability to understand system state based on logs, metrics, and traces.
+
+2) Purpose             Detect failures and measure performance.	                           Diagnose root causes of failures and unexpected behaviors.
+
+3) Data Collected	    Metrics (CPU, memory, request latency, error rates, etc.).	         Logs, Metrics, Traces (distributed tracing, structured logs).
+
+4) Approach	          Reactive → Alerts when something goes wrong.	                       Proactive → Helps debug why something went wrong.
+
+5) Examples	          - Checking if CPU usage is high.                                      - Understanding why CPU usage is high.
+                    - Monitoring API response times.	                                    - Finding which microservice caused slow responses.
+
+6) Key Tools          	Prometheus, Grafana, CloudWatch, New Relic.                          	OpenTelemetry, Jaeger, Zipkin, Elastic Stack (ELK).
+
+7) Scope	              Looks at known failure patterns.	                                    Helps explore unknown failure patterns.
+
+📌 In Short:
+             Monitoring = "Is my system working?" ✅
+             Observability = "Why is my system not working?" 🔍
