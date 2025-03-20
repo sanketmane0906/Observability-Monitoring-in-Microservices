@@ -1,0 +1,27 @@
+Logging :-
+
+    Logs are discrete records of events that occur in software. They contain timestamps and details about what happened and when, providing valuable insights for debugging, monitoring, and auditing.
+
+Logging in Monolithic Architecture :- 
+
+    In a monolithic architecture, logging is relatively simple because all logs are present in one place, making it easy to collect and analyze them.
+
+Logging in Microservices Architecture :-
+
+    In a microservices architecture, each service generates its own logs, which are stored in different locations. This decentralized nature makes log management more challenging.
+
+Centralized Logging :-
+
+    To effectively manage logs in a microservices environment, centralized logging is essential. It involves:
+
+    1) Log Aggregation: Collecting logs from all microservices into a central repository.
+
+    2) Structured Logging: Using a consistent format (e.g., JSON) for easier parsing and analysis.
+
+    3) Log Forwarding: Utilizing tools like Fluentd, Logstash, or Beats to send logs to a central system.
+
+    4) Log Storage & Management: Storing logs in systems like Elasticsearch, Splunk, or Loki for indexing and retrieval.
+
+    5) Visualization & Monitoring: Using dashboards like Kibana, Grafana, or CloudWatch for real-time monitoring and insights.
+
+    6) Alerting & Analysis: Setting up alerts based on log patterns to detect issues early.
