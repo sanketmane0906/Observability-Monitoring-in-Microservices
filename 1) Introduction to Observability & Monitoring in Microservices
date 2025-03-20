@@ -1,0 +1,23 @@
+Observability & Monitoring in Microservices :-
+
+🔍 Debugging Problems in Microservices
+    i) Distributed Tracing: Use tools like Jaeger, Zipkin, OpenTelemetry to trace requests across multiple microservices.
+    ii) Log Aggregation: Centralize logs with ELK Stack (Elasticsearch, Logstash, Kibana) or Fluentd + Loki + Grafana for better debugging.
+    iii) Correlation ID: Assign a unique request ID to track a request across all services.
+    iv) Error Monitoring: Use Sentry, Prometheus Alerts to catch exceptions and failures.
+
+📊 Monitoring Performance of Service Calls
+     i) APM (Application Performance Monitoring): Tools like New Relic, Datadog, Prometheus + Grafana help monitor request latency, throughput, and error rates.
+     ii) Service Mesh: Use Istio, Linkerd to monitor service-to-service communication.
+     iii) Slow Queries: Use SQL profiling (e.g., in PostgreSQL, MySQL) and NoSQL monitoring (e.g., MongoDB Compass, AWS CloudWatch).
+     iv) Rate Limiting: Use API gateways like Kong, Nginx, Apigee to control traffic spikes.
+
+📈 Monitoring Metrics & Health of Microservices
+     i) CPU & Memory Usage: Monitor with Prometheus, Grafana, CloudWatch, or Datadog.
+     ii) JVM Metrics (for Java-based microservices):
+            Heap Usage & GC Logs → Use Micrometer, Prometheus JMX Exporter.
+            Thread Count → Monitor blocked, waiting, and running threads.
+      iii) Health Checks:
+           Use Spring Boot Actuator (/actuator/health) for live health checks.
+           Kubernetes Liveness & Readiness Probes to restart unhealthy containers.
+           Database Connection Pooling: Use HikariCP metrics to avoid connection exhaustion.
